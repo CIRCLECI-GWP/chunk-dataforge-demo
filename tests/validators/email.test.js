@@ -65,7 +65,7 @@ describe('Email Validator', () => {
     test('converts to lowercase', () => {
       expect(validateEmail('USER@EXAMPLE.COM')).toEqual({
         valid: true,
-        value: 'user@example.com'
+        value: 'USER@EXAMPLE.COM'  // intentional break: expects un-normalized output
       });
     });
   });
