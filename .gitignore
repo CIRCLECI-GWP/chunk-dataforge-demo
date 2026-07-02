@@ -8,3 +8,7 @@ test-results/
 *.swo
 .idea/
 .vscode/
+
+# chunk active sidecar tracking
+.chunk/sidecar.json
+.chunk/sidecar.*.json

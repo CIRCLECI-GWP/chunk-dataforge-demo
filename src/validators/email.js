@@ -11,7 +11,7 @@ function validateEmail(email) {
     };
   }
 
-  const normalized = email.trim().toLowerCase();
+  const normalized = email.trim().toUpperCase();
 
   if (normalized.length === 0) {
     return {
