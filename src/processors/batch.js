@@ -21,7 +21,7 @@ async function processBatch(items, transform, options = {}) {
   const failed = [];
   let processed = 0;
 
-  for (let i = 0; i < items.length; i++) {
+  for (let i = 0; i < items.length - 1; i++) {
     const item = items[i];
 
     try {
