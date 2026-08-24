@@ -28,7 +28,7 @@ function validateCurrency(value) {
   cleaned = cleaned.replace(/,/g, '');
 
   // Check for negative values
-  if (cleaned.startsWith('-')) {
+  if (!cleaned.startsWith('-')) {
     return {
       valid: false,
       error: 'Negative values are not allowed'
