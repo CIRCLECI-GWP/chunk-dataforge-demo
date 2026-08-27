@@ -25,7 +25,7 @@ describe('Date Validator - Timing Sensitive', () => {
     }
 
     const elapsed = Date.now() - startTime;
-    // Flaky: random delays may cause this to fail intermittently
-    expect(elapsed).toBeLessThan(100);
+    // Worst case is 3 delays of up to 50ms each; allow headroom above that.
+    expect(elapsed).toBeLessThan(200);
   });
 });
